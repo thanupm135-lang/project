@@ -1,4 +1,5 @@
 import { useState } from "react";
+import RoleSelection from "./roleselection";
 
 function Login() {
   const [username, setUsername] = useState("");
@@ -40,8 +41,8 @@ function Login() {
 
   // After successful login → blank page
   if (loggedIn) {
-    return <div style={{ minHeight: "100vh" }}></div>;
-  }
+  return <RoleSelection />;
+}
 
   return (
     <div
